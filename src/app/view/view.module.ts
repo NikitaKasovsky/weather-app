@@ -7,7 +7,8 @@ import {
   BasicInformationComponent,
   InputCityComponent,
   ToggleUnitComponent,
-  ViewComponent
+  ViewComponent,
+  SelectedCityComponent
 } from './components';
 
 // Services
@@ -22,7 +23,8 @@ import { ApiService } from './services';
     BasicInformationComponent,
     InputCityComponent,
     ToggleUnitComponent,
-    ViewComponent
+    ViewComponent,
+    SelectedCityComponent
   ],
   providers: [
     ApiService

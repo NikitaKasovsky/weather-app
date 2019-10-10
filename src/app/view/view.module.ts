@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+// Services
+import { ApiService } from './services';
+
 // Components
 import {
   AdditionalInformationComponent,
@@ -10,9 +13,6 @@ import {
   ViewComponent,
   SelectedCityComponent
 } from './components';
-
-// Services
-import { ApiService } from './services';
 
 @NgModule({
   imports: [
@@ -26,11 +26,11 @@ import { ApiService } from './services';
     ViewComponent,
     SelectedCityComponent
   ],
-  providers: [
-    ApiService
-  ],
   exports: [
     ViewComponent
+  ],
+  providers: [
+    ApiService
   ]
 })
 export class ViewModule { }

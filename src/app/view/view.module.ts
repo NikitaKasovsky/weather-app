@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Services
-import { ApiService } from './services';
+import { ApiService, StorageService } from './services';
 
 // Components
 import {
@@ -33,7 +33,8 @@ import {
     ViewComponent
   ],
   providers: [
-    ApiService
+    ApiService,
+    StorageService
   ]
 })
 export class ViewModule { }

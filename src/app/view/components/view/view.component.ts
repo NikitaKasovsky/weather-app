@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ApiService } from '../../services';
+// Services
+import { ApiService, StorageService } from '../../services';
 
 @Component({
   selector: 'app-view',
@@ -10,12 +11,13 @@ import { ApiService } from '../../services';
 export class ViewComponent implements OnInit {
 
   constructor(
-    private readonly api: ApiService
+    private readonly api: ApiService,
+    private readonly storage: StorageService
   ) { }
 
   ngOnInit() {
     this.api.testRequest()
-      .subscribe(data => console.log(data));
+      .subscribe(data => this.storage.city$.next(data));
   }
 
 }

@@ -1,3 +1,12 @@
-<p>
-  toggle-unit works!
-</p>
+<div class="unit">
+  <div class="unit__degree">º</div>
+
+  <label class="unit__switch">
+    
+    <input type="checkbox" [formControl]="toggle">
+    <span class="unit__toggle"></span>
+    <div class="unit__celsius">C</div>
+    <div class="unit__fahrenheit">F</div>
+  
+  </label>
+</div>

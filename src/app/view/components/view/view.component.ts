@@ -15,7 +15,7 @@ export class ViewComponent implements OnInit {
 
   ngOnInit() {
     this.api.testRequest()
-      .subscribe(data => console.log(data))
+      .subscribe(data => console.log(data));
   }
 
 }
